@@ -1,0 +1,57 @@
+/* Defining the font */
+body {
+    font-family: "Funnel Display", sans-serif;
+}
+
+/* Add background color to the navigation bar */
+.navbar {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+    color: #1d1d1d;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.nav-logo {
+    width: 50px;
+    height: 50px;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+    color: rgb(95, 95, 95);
+}
+
+/* Add color to the active page */
+.navbar a.active {
+    color: rgb(201, 0, 0);
+}
+
+/* Testing the composition */
+.main-test {
+    margin: auto;
+    overflow: hidden;
+    height: 100vh;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.left h2 {
+    margin-bottom: -15px;
+}
+.right {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+.right h2 {
+    color: rgb(201, 0, 0);
+}

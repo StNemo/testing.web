@@ -6,18 +6,24 @@
         <title>Saint Nemo</title>
         <link rel="icon" sizes="any" type="image/svg" href="/img/favico.svg">
         <link rel="stylesheet" href="styles.css">
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
-        <div class="navbar">
+        <div class="navbar" id="myNavbar">
 
             <a class="nav-logo" href="index.html"><img src="img/favico.svg" alt="Saint nemo logo"></a>
             <a href="proyectos.html">Proyectos</a>
             <a href="contacto.html">Contacto</a>
             <a href="bitter.html">Bitter</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
         </div>
 
         <main class="main-test">
@@ -34,5 +40,7 @@
                 </div>
             </div>
         </main>
+
+        <script src="scripts.js"></script>
     </body>
 </html>

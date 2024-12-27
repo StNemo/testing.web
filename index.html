@@ -16,14 +16,16 @@
 
     <body>
         <div class="navbar" id="myNavbar">
-
-            <a class="nav-logo" href="index.html"><img src="img/favico.svg" alt="Saint nemo logo"></a>
-            <a href="proyectos.html">Proyectos</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="bitter.html">Bitter</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-              </a>
+           <script>
+                fetch('navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                document.getElementById('myNavbar').innerHTML = data;
+                })
+                .catch(error => {
+                console.error('Error:', error);
+                });
+           </script>
         </div>
 
         <main class="main-test">
@@ -31,16 +33,23 @@
                 <h2>Saint Nemo</h2>
                 <p>Sole Et Lumen</p>
             </div>
-            <div class="right">
+            <div class="entrada">
                 <div>
-                    <h2>18 Diciembre 2k24</h2>
+                    <h2>21 Diciembre 2k24</h2>
                 </div>
                 <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eius, quidem cum autem temporibus vel explicabo tenetur laboriosam, ea sunt optio minima delectus enim itaque laborum ipsam quia, voluptatum soluta.</p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eius atque quod. Libero tempore fugiat animi sed molestias esse. Modi mollitia saepe dolorum hic cum explicabo neque voluptates minima vel.
+                    </p>
+                    <p>
+                        <em>
+                            In dreams, I scream piano
+                        </em>
+                    </p>
                 </div>
             </div>
         </main>
 
-        <script src="scripts.js"></script>
+        <script src="scripts.js" defer></script>
     </body>
 </html>

@@ -87,7 +87,7 @@ div .entrada:not(:first-child) {
     .navbar.responsive {flex-direction: column;}
     .navbar.responsive a.icon {
         position: absolute;
-        right: 22px;
+        right: 29px;
         top: 23px;
     }
     .navbar.responsive .nav-logo {
